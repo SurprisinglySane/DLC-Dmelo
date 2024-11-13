@@ -1,0 +1,347 @@
+2024-11-11 19:16:17 Config:
+{'all_joints': [[0], [1], [2]],
+ 'all_joints_names': ['Head', 'Abdomin', 'Thorax'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_DLC Testing '
+            'projectNov11\\DLC Testing project_Nav95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 500,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\navro\\anaconda3\\envs\\py310\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_DLC '
+                'Testing projectNov11\\Documentation_data-DLC Testing '
+                'project_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]],
+ 'net_type': 'resnet_50',
+ 'num_idchannel': 0,
+ 'num_joints': 3,
+ 'num_limbs': 3,
+ 'optimizer': 'adam',
+ 'pafwidth': 20,
+ 'pairwise_huber_loss': False,
+ 'pairwise_loss_weight': 0.1,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1], [0, 2], [1, 2]],
+ 'partaffinityfield_predict': True,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': 'C:\\Users\\navro\\Desktop\\DLC Testing '
+                 'project-Nav-2024-11-11',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 10000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\navro\\Desktop\\DLC Testing '
+                    'project-Nav-2024-11-11\\dlc-models\\iteration-0\\DLC '
+                    'Testing projectNov11-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2024-11-11 19:35:08 iteration: 1000 loss: 0.0156 scmap loss: 0.0126 locref loss: 0.0007 limb loss: 0.0024 lr: 0.0001
+2024-11-11 19:58:46 iteration: 2000 loss: 0.0069 scmap loss: 0.0063 locref loss: 0.0002 limb loss: 0.0005 lr: 0.0001
+2024-11-11 20:21:04 iteration: 3000 loss: 0.0059 scmap loss: 0.0054 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+2024-11-11 20:42:01 iteration: 4000 loss: 0.0055 scmap loss: 0.0050 locref loss: 0.0001 limb loss: 0.0004 lr: 0.0001
+2024-11-11 21:04:00 iteration: 5000 loss: 0.0046 scmap loss: 0.0042 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+2024-11-11 21:26:55 iteration: 6000 loss: 0.0046 scmap loss: 0.0042 locref loss: 0.0001 limb loss: 0.0003 lr: 0.0001
+2024-11-11 21:49:57 iteration: 7000 loss: 0.0041 scmap loss: 0.0038 locref loss: 0.0001 limb loss: 0.0002 lr: 0.0001
+2024-11-11 22:14:14 iteration: 8000 loss: 0.0036 scmap loss: 0.0034 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
+2024-11-11 22:38:54 iteration: 9000 loss: 0.0034 scmap loss: 0.0031 locref loss: 0.0001 limb loss: 0.0002 lr: 5e-05
+2024-11-11 23:04:11 iteration: 10000 loss: 0.0032 scmap loss: 0.0030 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2024-11-11 23:31:08 iteration: 11000 loss: 0.0030 scmap loss: 0.0029 locref loss: 0.0001 limb loss: 0.0001 lr: 5e-05
+2024-11-11 23:53:50 iteration: 12000 loss: 0.0030 scmap loss: 0.0028 locref loss: 0.0000 limb loss: 0.0001 lr: 5e-05
+2024-11-12 00:07:29 iteration: 13000 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 00:20:54 iteration: 14000 loss: 0.0027 scmap loss: 0.0025 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 00:34:14 iteration: 15000 loss: 0.0026 scmap loss: 0.0024 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 00:47:25 iteration: 16000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 01:00:46 iteration: 17000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 01:13:58 iteration: 18000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 01:27:17 iteration: 19000 loss: 0.0025 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 01:40:33 iteration: 20000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 01:54:04 iteration: 21000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 02:07:41 iteration: 22000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 02:20:49 iteration: 23000 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 02:33:53 iteration: 24000 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 02:46:59 iteration: 25000 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 03:00:22 iteration: 26000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 03:13:48 iteration: 27000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 03:27:12 iteration: 28000 loss: 0.0024 scmap loss: 0.0023 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 03:40:29 iteration: 29000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 03:53:39 iteration: 30000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 04:07:19 iteration: 31000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 04:20:31 iteration: 32000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 04:33:49 iteration: 33000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 04:47:24 iteration: 34000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 05:00:43 iteration: 35000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 05:14:00 iteration: 36000 loss: 0.0023 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 05:27:24 iteration: 37000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 05:40:46 iteration: 38000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 05:54:01 iteration: 39000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 06:07:13 iteration: 40000 loss: 0.0024 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 06:20:27 iteration: 41000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 06:33:31 iteration: 42000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 06:46:42 iteration: 43000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 07:00:04 iteration: 44000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 07:13:31 iteration: 45000 loss: 0.0021 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 07:26:46 iteration: 46000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 07:39:59 iteration: 47000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 07:53:39 iteration: 48000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 08:07:03 iteration: 49000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 08:20:26 iteration: 50000 loss: 0.0022 scmap loss: 0.0021 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 08:33:48 iteration: 51000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 08:47:12 iteration: 52000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 09:00:42 iteration: 53000 loss: 0.0023 scmap loss: 0.0022 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 09:13:53 iteration: 54000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 09:27:04 iteration: 55000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 09:40:43 iteration: 56000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 09:54:39 iteration: 57000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 10:15:51 iteration: 58000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 10:38:17 iteration: 59000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 11:01:04 iteration: 60000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 11:23:15 iteration: 61000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 11:45:06 iteration: 62000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 12:05:54 iteration: 63000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 12:27:15 iteration: 64000 loss: 0.0021 scmap loss: 0.0020 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 12:50:30 iteration: 65000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 21:41:57 iteration: 66000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 21:57:24 iteration: 67000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 22:13:32 iteration: 68000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 22:32:04 iteration: 69000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 22:49:50 iteration: 70000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 23:07:35 iteration: 71000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 23:26:00 iteration: 72000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-12 23:49:54 iteration: 73000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 00:14:21 iteration: 74000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 00:38:05 iteration: 75000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 00:57:36 iteration: 76000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 01:14:27 iteration: 77000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 01:33:36 iteration: 78000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 01:57:15 iteration: 79000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 02:21:10 iteration: 80000 loss: 0.0018 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 02:41:32 iteration: 81000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 02:59:46 iteration: 82000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 03:17:56 iteration: 83000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 03:35:47 iteration: 84000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 03:53:37 iteration: 85000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 04:11:45 iteration: 86000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 04:29:37 iteration: 87000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 04:47:13 iteration: 88000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 05:04:59 iteration: 89000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 05:22:30 iteration: 90000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 05:40:36 iteration: 91000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 05:58:29 iteration: 92000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 06:16:17 iteration: 93000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 06:34:07 iteration: 94000 loss: 0.0018 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 06:51:39 iteration: 95000 loss: 0.0018 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 07:09:33 iteration: 96000 loss: 0.0020 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 07:27:33 iteration: 97000 loss: 0.0018 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 07:45:14 iteration: 98000 loss: 0.0019 scmap loss: 0.0018 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 08:03:21 iteration: 99000 loss: 0.0018 scmap loss: 0.0017 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 08:21:20 iteration: 100000 loss: 0.0019 scmap loss: 0.0019 locref loss: 0.0000 limb loss: 0.0001 lr: 1e-05
+2024-11-13 11:42:45 Config:
+{'all_joints': [[0], [1], [2]],
+ 'all_joints_names': ['Head', 'Abdomin', 'Thorax'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_DLC Testing '
+            'projectNov11\\DLC Testing project_Nav95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\navro\\anaconda3\\envs\\py310\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_smooth': False,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'minconfidence': 0.01,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'net_type': 'resnet_50',
+ 'nmsradius': 5.0,
+ 'num_idchannel': 0,
+ 'num_joints': 3,
+ 'num_limbs': 3,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1], [0, 2], [1, 2]],
+ 'partaffinityfield_predict': True,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'sigma': 1,
+ 'snapshot_prefix': 'C:\\Users\\navro\\Desktop\\DLC Testing '
+                    'project-Nav-2024-11-11\\dlc-models\\iteration-0\\DLC '
+                    'Testing projectNov11-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2024-11-13 11:42:45 Config:
+{'all_joints': [[0], [1], [2]],
+ 'all_joints_names': ['Head', 'Abdomin', 'Thorax'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_DLC Testing '
+            'projectNov11\\DLC Testing project_Nav95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 500,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\navro\\anaconda3\\envs\\py310\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_DLC '
+                'Testing projectNov11\\Documentation_data-DLC Testing '
+                'project_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.0001, 7500], [5e-05, 12000], [1e-05, 200000]],
+ 'net_type': 'resnet_50',
+ 'num_idchannel': 0,
+ 'num_joints': 3,
+ 'num_limbs': 3,
+ 'optimizer': 'adam',
+ 'pafwidth': 20,
+ 'pairwise_huber_loss': False,
+ 'pairwise_loss_weight': 0.1,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1], [0, 2], [1, 2]],
+ 'partaffinityfield_predict': True,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': 'C:\\Users\\navro\\Desktop\\DLC Testing '
+                 'project-Nav-2024-11-11',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 10000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': 'C:\\Users\\navro\\Desktop\\DLC Testing '
+                    'project-Nav-2024-11-11\\dlc-models\\iteration-0\\DLC '
+                    'Testing projectNov11-trainset95shuffle1\\train\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2024-11-13 14:04:07 Config:
+{'all_joints': [[0], [1], [2]],
+ 'all_joints_names': ['Head', 'Abdomin', 'Thorax'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets\\iteration-0\\UnaugmentedDataSet_DLC Testing '
+            'projectNov11\\DLC Testing project_Nav95shuffle1.pickle',
+ 'dataset_type': 'multi-animal-imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': 'C:\\Users\\navro\\anaconda3\\envs\\py310\\lib\\site-packages\\deeplabcut\\pose_estimation_tensorflow\\models\\pretrained\\resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_smooth': False,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'minconfidence': 0.01,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'net_type': 'resnet_50',
+ 'nmsradius': 5.0,
+ 'num_idchannel': 0,
+ 'num_joints': 3,
+ 'num_limbs': 3,
+ 'optimizer': 'sgd',
+ 'paf_best': [2, 0],
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_graph': [[0, 1], [0, 2], [1, 2]],
+ 'partaffinityfield_predict': True,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'sigma': 1,
+ 'snapshot_prefix': 'C:\\Users\\navro\\Desktop\\DLC Testing '
+                    'project-Nav-2024-11-11\\dlc-models\\iteration-0\\DLC '
+                    'Testing projectNov11-trainset95shuffle1\\test\\snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
